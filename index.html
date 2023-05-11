@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+    }
+
+    #canvas {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-right: 10px;
+    }
+
+    input[type="text"] {
+      width: 350px;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas">
+    <h2>Convert Crypto Wallet Address to AI Art Prompt</h2>
+    <form id="addressForm">
+      <label for="walletAddress">Enter your Crypto Wallet Address:</label>
+      <input type="text" id="walletAddress" required>
+      <br>
+      <button type="submit">Generate AI Art Prompt</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
